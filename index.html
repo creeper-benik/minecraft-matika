@@ -85,7 +85,7 @@
 <body>
 
     <div id="game-over">
-        <h1>GEJM OUVR</h1>
+        <h1>GAME OVER</h1>
         <p style="font-size: 10px;">DOŠLY TI ŽIVOTY!</p>
         <button class="btn-restart" onclick="location.reload()">ZKUSIT ZNOVU</button>
     </div>
@@ -133,7 +133,7 @@
         let aktualniRezim = 'scitani';
         let posledniZadani = ""; 
 
-        const hlaskySpravne = ["Kritikl hit!", "Máš XP!", "Skvělý crafting!", "Jsi profík!", "Diamanty pro tebe!", "Dane, jsi nejlepší!"];
+        const hlaskySpravne = ["Kritikl hit!", "Máš XP!", "Skvělý crafting!", "Jsi profík!", "Diamanty pro tebe!", "Jsi nejlepší!", "Jseš miliardář!"];
         const hlaskySpatne = ["Pozor, Krípr!", "Trefa vedle!", "Zkus to znovu!", "Enderman tě plete!", "Ztrácíš srdíčko!"];
         
         const minecraftOdmeny = [
@@ -171,7 +171,7 @@
 
         function konecneGameOver() {
             document.getElementById('game-over').style.display = 'flex';
-            mluv("Gejm ouvr! Prohrál jsi všechny životy!", false);
+            mluv("Gejm ouvr! Tvoje těžba skončila!", false);
             
             const ctx = new (window.AudioContext || window.webkitAudioContext)();
             const osc = ctx.createOscillator();
@@ -349,3 +349,4 @@
     </script>
 </body>
 </html>
+
